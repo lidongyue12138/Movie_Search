@@ -6,7 +6,7 @@
 - Flask web框架
 - D3.js 可视化工具
 
-我们允许时候数据已经导入了，但是由于数据巨大无法上传到GitHub，我们上传到了百度云，链接为，提取码为。
+我们允许时候数据已经导入了，但是由于数据巨大无法上传到GitHub，我们将部分数据（因为太大）上传到了百度云，还在上传中，链接稍后发出。
 
 如要使用，请在百度云中下载，先安装elasticsearch，将movies压缩包解压中的网页拷贝到到crawler_douban/movies中，解压pics图片文件拷贝到douban602/pic/dataset中。
 
