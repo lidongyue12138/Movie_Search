@@ -1,0 +1,10 @@
+<h1>{{hello}}</h1>
+
+{% for athlete in athlete_list reversed %}
+   <li>{{ athlete.name|lower }}</li>
+   <ul>
+   {% for sport in athlete.sport %}
+        <li>{{sport}}</li>
+    {% endfor %}
+</ul>
+{% endfor %}

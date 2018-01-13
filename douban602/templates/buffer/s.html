@@ -1,0 +1,59 @@
+{% extends "all_page.html" %}
+{% block title %}Result{% endblock %}
+
+{% block page_content %}
+
+    <div class="mainbar">
+        <h1>The result for Film</h1>
+
+        <div class="allresult">
+
+            {% for movie in result_list %}
+            <table>
+            <tr>
+                <td>
+                    <div class="film-image" style="background-color: #FFFFFF;">
+                        <img src="{{movie.img_url}}" alt="" srcset="">
+                    </div>
+                </td>
+                <td>
+                    <div class="film-info" style=" top-margin:10px;">
+                        <table>
+                            <tr> <a href="/co/{{movie.id}}">{{movie.name}}</a></tr>
+                            <tr><td>评分:{{movie.score}}</td></tr>
+                            <tr>
+                                <td>导演:{{movie.director}}</td><td>演员:{{movie.stars}}</td>
+                            </tr>
+                            <tr>
+                                <td>简介:{{movie.plot}}  </td>
+                            </tr>
+                            <tr><td>评论</td></tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            </table>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="sidebar" style="background-color:bisque;" >
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <h1 align='middle'>同类型相关</h1>
+        <div id="bubble-canvas">
+                <svg width="900" height="900" font-family="sans-serif" font-size="10" text-anchor="middle" id="bubble"></svg>
+                <script src="static/scripts/bubble.js"></script>
+            </div>
+
+            <h1 align='middle'>导演：时间轴</h1>
+            <div id="bar-canvas">
+                <svg height="600" width="900" id="bar"></svg>
+                <script src="static/scripts/bar.js"></script>
+            </div>;
+    </div>
+
+{% endblock %}
+
+</html>

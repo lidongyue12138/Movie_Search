@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+{% import "header.html" as header %}
+
+{% block title %}Search{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="static/css/style.css">
+{% endblock %}
+
+
+{% block content %}
+  {{header}}
+<div class="container" style="padding-top: 70px">
+    {% block page_content %}{% endblock %}
+</div>
+{% endblock %}

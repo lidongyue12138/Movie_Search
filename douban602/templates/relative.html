@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/tree.css')}}"/>
+    <script type="text/javascript" src="{{url_for('static', filename='scripts/d3.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='scripts/d3.layout.js')}}"></script>
+    <!-- <style type="text/css" href="tree.css"> </style> -->
+  </head>
+  <body>
+    <div id="tree-background" style="filter:Alpha( opacity = 30);-moz-opacity;background-color:#FFFFFF">
+      <div id="tree"> </div>
+    </div>
+    <div id="body">
+      <div id="footer">
+        d3.layout.tree
+        <div class="hint">click or option-click to expand or collapse</div>
+      </div>
+    </div>
+    <span id="treejson" style="visibility: hidden">{{film_json|safe}}</span>
+    <script type="text/javascript" src="{{url_for('static', filename='scripts/tree.js')}}"></script>
+
+  </body>
+</html>

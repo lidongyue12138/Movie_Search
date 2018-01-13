@@ -1,0 +1,68 @@
+{% import "header.html" as header %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/static/css/zerogrid.css">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+<body>
+<div class="wrap-body">
+	<!--////////////////////////////////////Header-->
+	<header>
+		<div class="wrap-header zerogrid">
+			<div class="row">
+				<div class="col-1-2">
+					<div class="wrap-col">
+						<div class="logo"><a href="#"><img src="{{url_for('static',filename='images/logo.jpg')}}" width="40"/></a></div>
+					</div>
+				</div>
+				<div class="col-1-2">
+					<div class="wrap-col f-right">
+						<form method="get" action="/s" id="search"  >
+						  <input name="q" type="text" size="40" placeholder="Search..." />
+						  <input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+			{{header}}
+		</div>
+	</header>
+
+	<!--////////////////////////////////////Container-->
+	<section id="container">
+		<div class="wrap-container zerogrid">
+			<div id="main-content" c>
+				<div class="wrap-content">
+					<div class="movie">
+	            {% block mainbar %}
+	            {% endblock %}
+						</div>
+					</div>
+			</div>
+			<div id="sidebar" >
+
+				</div>
+			</div>
+			<div class="wrap-sidebar">
+				<div class="widget wid-post">
+					{% block sidebar %}
+					{% endblock %}
+				</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>

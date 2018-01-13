@@ -1,0 +1,24 @@
+{% extends "all_page.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Search Plot{% endblock %}
+
+{% block style %}
+{{super()}}
+
+{% endblock %}}
+
+{% block page_content %}
+    <h1 style="text-align: center">搜剧情</h1>
+    <div id="logo" style="text-align: center; margin: 20px;  ">
+        <img src="{{url_for('static',filename='images/logo.jpg')}}" alt="bg image" style="border-radius: 5px; width:100px;"/>
+    </div>
+
+    <form action="/plot/result" method="get">
+        <div  style="width: 100%; text-align: center; color:#000000; margin-top: 10">
+            <input type="text" name="plot" maxlength="100" size="60">
+            <input type="submit" value="Search">
+        </div>
+    </form>
+
+{% endblock %}

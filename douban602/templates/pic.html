@@ -1,0 +1,16 @@
+{% extends "all_page.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Douban 602{% endblock %}
+
+
+{% block page_content %}
+<h1 text-align="middle">搜海报</h1>
+<form action="/pic/result" method="get">
+    <div  style="width: 100%; text-align: center; color: #000000; margin-top: 10">
+        <legend>Picture Address</legend>
+        <input type="file" name="picfile">
+        <input type="submit" value="Search">
+    </div>
+</form>
+
+{% endblock %}

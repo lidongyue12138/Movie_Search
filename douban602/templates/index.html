@@ -1,0 +1,28 @@
+{% extends "all_page.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Douban 602{% endblock %}
+
+{% block page_content %}
+
+      <div style="float:left;">
+          <div id="logo" style="text-align: center; margin: 20px;">
+            <img src="{{url_for('static',filename='images/logo.jpg')}}" alt="Douban 602"
+            style="border-radius: 5px; width:200px;"/>
+
+          </div>
+          <form action="/s" method="get">
+              <div style="color:#000000; width:100%; text-align: center;margin-top: 10">
+                  <input type="text" name="q" maxlength="30" size="50">
+                  <input type="submit" value="Search">
+              </div>
+          </form>
+      </div>
+
+      <div style="width: 600px; float:right; text-align: center; ">
+          <h3>高级搜索</h3>
+          {{wtf.quick_form(form)}}
+
+      </div>
+
+{% endblock %}
