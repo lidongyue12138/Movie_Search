@@ -1,0 +1,20 @@
+26133459 global name 'f_complete' is not defined2119624 global name 'f_complete' is not defined2056033 global name 'f_complete' is not defined1875725 global name 'f_complete' is not defined27126955 global name 'f_complete' is not defined25792623 global name 'f_complete' is not defined26332941 global name 'f_complete' is not defined1477470 global name 'f_complete' is not defined24381190 global name 'f_complete' is not defined2353083 global name 'f_complete' is not defined6113797 global name 'f_complete' is not defined1301717 global name 'f_complete' is not defined4722906 global name 'f_complete' is not defined2381089 global name 'f_complete' is not defined26610786 global name 'f_complete' is not defined1906051 global name 'f_complete' is not defined2084628 global name 'f_complete' is not defined1294763 global name 'f_complete' is not defined20470368 global name 'f_complete' is not defined1294766 global name 'f_complete' is not defined26339792 global name 'f_complete' is not defined2274776 global name 'f_complete' is not defined3221054 global name 'f_complete' is not defined1306406 global name 'f_complete' is not defined6132713 global name 'f_complete' is not defined1300442 global name 'f_complete' is not defined2084334 global name 'f_complete' is not defined5993157 global name 'f_complete' is not defined2282937 need more than 2 values to unpack
+3508071 cannot identify image file <_io.BytesIO object at 0x0000000016718360>
+1874750 need more than 2 values to unpack
+1417074 need more than 2 values to unpack
+2270535 need more than 2 values to unpack
+2077449 need more than 2 values to unpack
+2208951 need more than 2 values to unpack
+1439743 need more than 2 values to unpack
+1294459 need more than 2 values to unpack
+2051601 cannot identify image file <_io.BytesIO object at 0x00000000170C58E0>
+1302768 need more than 2 values to unpack
+1401897 need more than 2 values to unpack
+1828046 need more than 2 values to unpack
+4154700 local variable 'r' referenced before assignment
+26841314 local variable 'r' referenced before assignment
+2057552 local variable 'r' referenced before assignment
+1764388 need more than 2 values to unpack
+1437395 need more than 2 values to unpack
+1878079 need more than 2 values to unpack
+1307466 need more than 2 values to unpack
